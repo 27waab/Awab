@@ -250,3 +250,98 @@ section.landing {
     color: var(--grey-color-two);
 }
 /* End Langege */
+/* Start Qute */
+.qute {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--white-color);
+}
+.qute p {
+    text-align: center;
+    color: var(--main-color-alt);
+    font-size: 22px;
+    font-weight: bold;
+}
+.qute p.name {
+    color: var(--black-color);
+}
+/* End Qute */
+/* Start Status */
+.status {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--grey-color);
+}
+.status .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.status .box {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+}
+.status .box:first-child i {
+    color: var(--main-color-alt);
+}
+.status .box:nth-child(2) i {
+    color: #2196f3;
+}
+.status .box:nth-child(3) i {
+    color: #4caf50;
+}
+.status .box:last-child i {
+    color: #f44336;
+}
+.status .box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.status .box h3 {
+    font-size: 30px;
+    color: var(--black-color);
+}
+.status .box p {
+    color: var(--grey-color-two);
+    font-size: 16px;
+}
+/* End Status */
+/* Start contact */
+.contact {
+    background-color: var(--white-color);
+    padding: 20px 0;
+}
+.contact .container {
+    text-align: center;
+}
+.contact p {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+.contact button {
+    color: var(--black-color);
+    padding: 5px 30px;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.contact button:hover {
+    background-color: var(--main-color-alt);
+}
+/* End contact */
+/* Start Footer */
+footer {
+    padding: 20px 0;
+    background-color: var(--black-color);
+    text-align: center;
+    color: var(--white-color);
+}
+/* End Footer */
