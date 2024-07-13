@@ -161,44 +161,49 @@ section.landing {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
+}
+.landing .image {
+    width: 350px;
+    position: relative;
+}
+.landing .image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#11111100 50%, var(--white-color));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.landing .image img {
+    width: 100%;
 }
 .landing .text {
     text-align: center;
-    width: 40%;
+    width: 100%;
 }
 .landing .text h3 {
     color: var(--black-color);
     font-size: 40px;
     margin-bottom: 10px;
     font-weight: bold;
+    position: relative;
+    z-index: 100;
+    margin-top: -50px;
 }
 .landing .text h3 span {
     color: var(--main-color-alt);
 }
-.landing .text p {
-    color: var(--grey-color-two);
-    font-size: 18px;
-    line-height: 2;
-}
-.landing .text a button {
-    color: var(--black-color);
-    padding: 5px 30px;
-    margin-top: 20px;
-    background-color: var(--main-color);
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: var(--main-transition);
-    border-radius: var(--main-border-radius);
-}
-.landing .text a button:hover {
-    color: var(--white-color);
-    background-color: var(--main-color-alt);
-}
 @media (max-width: 992px) {
-	.landing .text {
-        width: 80%;
+    .landing .image {
+        width: 300px;
+    }
+    .landing .text h3 {
+        margin-top: -80px;
+        font-size: 45px
     }
 }
 /* End Landing */
