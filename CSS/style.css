@@ -217,7 +217,7 @@ section.landing {
     background-color: var(--white-color);
     transition: var(--main-transition);
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     border-radius: var(--main-border-radius);
 }
 .lang .box:hover {
